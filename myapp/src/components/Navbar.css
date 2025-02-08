@@ -1,0 +1,67 @@
+/* Reset margin and padding for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Make the navbar fill the top space */
+  .nav-bar {
+    width: 100%;
+    background-color: #333; /* You can change this color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px; /* Adjust the padding as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo styling */
+  .nav-bar .logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Links container */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Link styling */
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect for links */
+  .nav-links a:hover {
+    color: #ff6347; /* You can change this color */
+  }
+  
+  /* Bag icon container */
+  .nav-bag {
+    position: relative;
+  }
+  
+  .nav-bag .bag-quantity {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust according to your navbar height */
+  }
